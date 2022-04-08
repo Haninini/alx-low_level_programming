@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /*
- * main - Entry point
+ * main - print small leters
  *
  * Description: Print lower case alphabet exclusing letters q and e
  * Return: Always 0
