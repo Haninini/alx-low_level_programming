@@ -3,11 +3,10 @@
 #include <stdio.h>
 
 /** 
- * main - Entry point
- *
- *
- * Return: Always 0 (success)
- */
+* main - Prints a random number and states positve, zero or negative
+*
+* Return: Always 0 (success)
+*/
 int main(void)
 {
 int n;
