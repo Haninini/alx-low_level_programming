@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /** 
- * main
+ * main small letters 
  *
  * Return: Always (Success)
  */
