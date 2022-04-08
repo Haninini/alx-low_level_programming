@@ -3,7 +3,7 @@
 /*
  * main - Entry point
  *
- * Description: the letters are prented except q and e
+ * Description: Print lower case alphabet exclusing letters q and e
  * Return: Always 0
  */
 
