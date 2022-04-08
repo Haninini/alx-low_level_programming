@@ -4,6 +4,7 @@
 
 /**
  * main - last digit comparision
+ *
  * Return: Always 0 (Success)
  */
 
