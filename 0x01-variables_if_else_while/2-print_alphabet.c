@@ -2,7 +2,7 @@
 
 /**
  * main - print small letters
- * 
+ *
  * Return: Always 0 (Success)
  */
 
