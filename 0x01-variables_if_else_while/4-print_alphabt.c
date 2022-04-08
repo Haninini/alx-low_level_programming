@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*
+/**
  * main - print small leters
  *
  * Description: Print lower case alphabet exclusing letters q and e
