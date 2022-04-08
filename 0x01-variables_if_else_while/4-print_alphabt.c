@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /*
- * main - print letters except q and e
+ * main - Entry point
  *
  * Description: the letters are prented except q and e
  * Return: Always 0
