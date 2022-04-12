@@ -25,5 +25,3 @@ int print_sign(int n)
 		_putchar('-');
 	}
 }
-
-
