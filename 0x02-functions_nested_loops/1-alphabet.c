@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
  * main - print alphabet function
  *
  * description: print small case alphabet
