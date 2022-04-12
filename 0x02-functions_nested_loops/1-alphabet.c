@@ -1,11 +1,8 @@
 #include "main.h"
 
 /**
- * main - print alphabet function
+ * print_alphabet -print small case alphabet
  *
- * description -print small case alphabet
- *
- * Return: 0
  */
 
 void print_alphabet(void)
