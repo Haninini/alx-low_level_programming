@@ -3,7 +3,8 @@
 /**
  * main - print alphabet function
  *
- * description: print small case alphabet
+ * description -print small case alphabet
+ *
  * Return: 0
  */
 
