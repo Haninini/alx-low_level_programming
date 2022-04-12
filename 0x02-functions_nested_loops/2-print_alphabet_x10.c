@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - 
+ * main - call the function 
  *
  * desciption - prints the alphabet ten times
  *
