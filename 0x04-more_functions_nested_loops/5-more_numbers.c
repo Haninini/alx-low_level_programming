@@ -20,7 +20,7 @@ void more_numbers(void)
 			{
 				j = l;
 			}
-			else 
+			else
 			{
 				j = l / 10;
 				k = l % 10;
@@ -33,4 +33,5 @@ void more_numbers(void)
 		l = 0;
 		_putchar('\n');
 	}
-}	
+}
+
