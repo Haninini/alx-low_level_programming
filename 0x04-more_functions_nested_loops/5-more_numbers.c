@@ -29,9 +29,9 @@ void more_numbers(void)
 			_putchar(k + '0');
 			l++;
 		}
-		i++;
-		l = 0;
-		_putchar('\n');
+	i++;
+	l = 0;
+	_putchar('\n');
 	}
 }
 
