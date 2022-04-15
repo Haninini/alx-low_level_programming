@@ -2,7 +2,7 @@
 
 /**
  * print_line - print lines in the terminal
- * @n: number of lines to be printed 
+ * @n: number of lines to be printed
  * Return: 0
  */
 
