@@ -11,7 +11,7 @@ int main(void)
 {
 	int x;
 
-	srand(time(0));
+	srand((unsigned int)(time(NULL)));
 	x = rand();
 	
 	printf("%i\n", x);
