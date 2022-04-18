@@ -25,6 +25,6 @@ void rev_string(char *s)
 		--i;
 	}
 	*revp = '\0';
-	*s = revs;
+	*s = *revp;
 }
 
