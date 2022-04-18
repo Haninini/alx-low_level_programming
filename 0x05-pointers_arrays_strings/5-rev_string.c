@@ -21,10 +21,10 @@ void rev_string(char *s)
 	{
 		s--;
 		*revp = *s;
-		*revp++;
+		revp++;
 		--i;
 	}
 	*revp = '\0';
-	*s = *revp;
+	*s = revs;
 }
 
