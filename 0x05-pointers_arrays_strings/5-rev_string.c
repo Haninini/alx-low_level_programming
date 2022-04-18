@@ -10,6 +10,7 @@ void rev_string(char *s)
 {
 	int leng, c, i;
 	char *b, *e, temp;
+
 	leng = 0;
 
 	b = s;
@@ -23,7 +24,7 @@ void rev_string(char *s)
 	for (c = 0; c < (leng - 1); c++)
 		e++;
 
-	for (c = 0; c < leng/2; c++)
+	for (c = 0; c < leng / 2; c++)
 	{
 		temp = *e;
 		*e = *b;
@@ -32,4 +33,4 @@ void rev_string(char *s)
 		b++;
 		e--;
 	}
-}	
+}
