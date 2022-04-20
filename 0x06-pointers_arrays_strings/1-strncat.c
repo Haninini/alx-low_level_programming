@@ -6,7 +6,7 @@
  * @src: the string from which n char are going to append
  * @n: number of char to be appended
  *
- * Rwturn: a pointer to the resulting string
+ * Return: a pointer to the resulting string
  */
 
 char *_strncat(char *dest, char *src, int n)
