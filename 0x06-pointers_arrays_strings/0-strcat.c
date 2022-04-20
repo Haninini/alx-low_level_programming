@@ -10,28 +10,22 @@
 
 char *_strcat(char *dest, char *src)
 {
-	char sorce[20];
-	char destin[98];
-	int i = 0, j = 0;
 
-	source = *src;
-	destin = *dest;
-
-	while (destin[i] != '\0')
+	while (*dest != '\0')
 	{
 		++dest;
-		i++;
 	}
 
-	while (source[j] != '\0')
+	while (*src != '\0')
 	{
 		*dest = *src;
 		dest++;
 		src++;
-		j++;
 	}
+	*dest = '\0';
+	_putchar('\n');
 
-	return (*dest);
+	return (dest);
 }
 
 
