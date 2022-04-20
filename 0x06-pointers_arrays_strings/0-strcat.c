@@ -11,7 +11,7 @@
 char *_strcat(char *dest, char *src)
 {
 	char sorce[20];
-	char destin[20];
+	char destin[98];
 	int i = 0, j = 0;
 
 	source = *src;
