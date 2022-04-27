@@ -3,6 +3,7 @@
 /**
  * leet - encodes a string into 1337
  * @s: the character to be changed
+ * Return: the pointer
  */
 
 char *leet(char *s)
