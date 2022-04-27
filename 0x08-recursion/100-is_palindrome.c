@@ -60,5 +60,3 @@ int is_palindrome(char *s)
 
 	return (check_paindrome(s, len, index));
 }
-
-
