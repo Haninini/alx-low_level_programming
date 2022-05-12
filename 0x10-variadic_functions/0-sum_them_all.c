@@ -3,6 +3,8 @@
 /**
  * sum_them_all - returns the sum of all its parameters
  * @n: numbers to be add
+ * @...: a variable number of parameter to be calculated
+ *
  * Return: If n == 0, return 0 otherwise return sum
  */
 int sum_them_all(const unsigned int n, ...)
@@ -10,9 +12,9 @@ int sum_them_all(const unsigned int n, ...)
 	var_list ad;
 	unsigned int i, sum = 0;
 
-	va_start (ad, n);
+	va_start(ad, n);
 	
-	for (i = 0; i < n; i = i++)
+	for (i = 0; i < n; i++)
 		sum += va_arg(ad, int);
 
 	va_end(ad);
