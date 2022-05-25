@@ -53,7 +53,7 @@ size_t print_listint_safe(const listint_t *head)
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	size_t nodes, index = 0;
+	size_t nodes, indx = 0;
 
 	nodes = looped_listint_len(head);
 
@@ -67,7 +67,7 @@ size_t print_listint_safe(const listint_t *head)
 	}
 	else
 	{
-		for (index = 0; index < nodes; index++)
+		for (indx = 0; indx < nodes; indx++)
 		{
 			printf("[%p] %d\n", (void *)head, head->n);
 			head = head->next;
