@@ -13,39 +13,39 @@ size_t free_listint_safe(listint_t **h);
  */
 size_t looped_listint_count(listint_t *head)
 {
-	listint_t *tortoise, *hare;
+	listint_t *tor, *ha;
 	size_t nodes = 1;
 
 	if (head == NULL || head->next == NULL)
 		return (0);
 
-	tortoise = head->next;
-	hare = (head->next)->next;
+	tor = head->next;
+	ha = (head->next)->next;
 
-	while (hare)
+	while (ha)
 	{
-		if (tortoise == hare)
+		if (tor == ha)
 		{
-			tortoise = head;
-			while (tortoise != hare)
+			tor = head;
+			while (tor != ha)
 			{
 				nodes++;
-				tortoise = tortoise->next;
-				hare = hare->next;
+				tor = tor->next;
+				ha = ha->next;
 			}
 
-			tortoise = tortoise->next;
-			while (tortoise != hare)
+			tor = tor->next;
+			while (tor != ha)
 			{
 				nodes++;
-				tortoise = tortoise->next;
+				tor = tor->next;
 			}
 
 			return (nodes);
 		}
 
-		tortoise = tortoise->next;
-		hare = (hare->next)->next;
+		tor = tor->next;
+		ha = (ha->next)->next;
 	}
 
 	return (0);
@@ -63,7 +63,7 @@ size_t looped_listint_count(listint_t *head)
  */
 size_t free_listint_safe(listint_t **h)
 {
-	listint_t *tmp;
+	listint_t *tm;
 	size_t nodes, index;
 
 	nodes = looped_listint_count(*h);
@@ -72,9 +72,9 @@ size_t free_listint_safe(listint_t **h)
 	{
 		for (; h != NULL && *h != NULL; nodes++)
 		{
-			tmp = (*h)->next;
+			tm = (*h)->next;
 			free(*h);
-			*h = tmp;
+			*h = tm;
 		}
 	}
 
@@ -82,9 +82,9 @@ size_t free_listint_safe(listint_t **h)
 	{
 		for (index = 0; index < nodes; index++)
 		{
-			tmp = (*h)->next;
+			tm = (*h)->next;
 			free(*h);
-			*h = tmp;
+			*h = tm;
 		}
 
 		*h = NULL;
