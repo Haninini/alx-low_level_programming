@@ -14,10 +14,12 @@ unsigned int binary_to_uint(const char *b)
 
 	if (!b)
 		return (0);
+
 	x = 0;
 
 	for (y = 0; b[y] != '\0'; y++)
 		;
+
 	for (y--, b_two = 1; y >= 0; y--, b_two *= 2)
 	{
 		if (b[y] != '0' && b[y] != '1')
@@ -29,5 +31,6 @@ unsigned int binary_to_uint(const char *b)
 			x += b_two;
 		}
 	}
+
 	return (x);
 }
