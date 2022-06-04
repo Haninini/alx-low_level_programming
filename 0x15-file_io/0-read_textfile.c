@@ -7,31 +7,38 @@
  * @letters: the number of letters it should read and print
  * Return: if the file can not be opened or read, return 0
  *         otherwise the actual number of letters it could read and print
- */
-ssize_t read_textfile(const char *filename, size_t letters)
+ *ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t op, rd, wr;
-	char *buffer;
+	ssize_t nlet;
+	int file;
+	char *txt;
 
-	if (filename == NULL)
+	if (!filename)
 		return (0);
-
-	buffer = malloc(sizeof(char) * letters);
-	if (buffer == NULL)
+	text = malloc(sizeof(char) * letters + 1);
+	if (txt == NULL)
 		return (0);
-
-	op = open(filename, O_RDONLY);
-	rd = read(op, buffer, letters);
-	wr = write(STDOUT_FILENO, buffer, rd);
-
-	if (op == -1 || rd == -1 || wr == -1 || wr != rd)
+	file = open(filename, O_RDONLY);
+	if (file == -1)
 	{
-		free(buffer);
+		free(txt);
 		return (0);
 	}
-
-	free(buffer);
-	close(op);
-
-	return (wr);
+	nlet = read(file, txt, sizeof(char) * letters);
+	if (nlet == -1)
+	{
+		free(txt);
+		close(file);
+		return (0);
+	}
+	nlet = write(STDOUT_FILENO, txt, nlet);
+	if (nlet == -1)
+	{
+		free(txt);
+		close(file);
+		return (0);
+	}
+	free(txt);
+	close(file);
+	return (nlet);
 }
