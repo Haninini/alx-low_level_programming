@@ -7,7 +7,9 @@
  * @letters: the number of letters it should read and print
  * Return: if the file can not be opened or read, return 0
  *         otherwise the actual number of letters it could read and print
- *ssize_t read_textfile(const char *filename, size_t letters)
+ */
+ 
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t nlet;
 	int file;
